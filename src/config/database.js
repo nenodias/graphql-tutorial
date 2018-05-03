@@ -6,6 +6,8 @@ knex('users').insert({
     name:'Teste',
     email:'teste@teste.com',
     password:'teste'
+}).then(function(id) { 
+    console.log(id);
 });
 
 knex('users').select('*').then(resultado => {
