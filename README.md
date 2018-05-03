@@ -14,3 +14,14 @@ knex migrate:latest
 }
 
 ### Exmplo de mutation
+mutation {
+  createUser(input:{
+    name: "Usuário",
+    email: "usuario@github.com",
+    password: "123"
+  }) {
+    id
+    name
+    email
+  }
+}
